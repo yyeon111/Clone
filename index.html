@@ -1,125 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>릿킴</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link href="icon.png" rel="shortcut icon" type="image/x-icon" />
-    <style>
-      .headline {
-        background-color: black;
-        color: white;
-        height: 50px;
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-        text-align: center;
-      }
 
-      .headline_txt {
-        display: table-cell;
-        vertical-align: middle;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>릿킴</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="icon.png" rel="shortcut icon" type="image/x-icon" />
+  <style>
+    .headline {
+      background-color: black;
+      color: white;
+      height: 50px;
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      text-align: center;
+    }
 
-      .buttons {
-        margin: 20px 0 0 50px;
-        font-weight: bold;
-      }
+    .headline_txt {
+      display: table-cell;
+      vertical-align: middle;
+    }
 
-      p > .button {
-        margin-right:10px;
-      }
+    .buttons {
+      margin: 20px 0 0 50px;
+      font-weight: bold;
+    }
 
-      /* .img {
-        align-items: center */
-      /* } */
-    .img{
+    p>.button {
+      margin-right: 10px;
+    }
+
+    .img {
       display: flex;
       flex-wrap: wrap;
-      flex-direction: column; /*수직 정렬*/
+      flex-direction: column;
       align-items: center;
       justify-content: center;
     }
-    .img{
+
+    .img {
       margin-bottom: 100px;
     }
 
-    .fixed{
-      color: blue;
+    .fixed {
+      color: gray;
+      font-size: 12px;
       position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-      /* position: fixed; */
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-left: 30px;
     }
-    </style>
-  </head>
-  <body>
-    <div class="headline">
-      <span class="headline_txt"
-        >SIGN UP NOW GET 2,000 OFF COUPON, JOIN US!</span
-      >
-    </div>
 
-    <div class = buttons>
-      <p>
-        <span class = button>rtk.</span>
-        <span class = button>NEWEST</span>
-        <span class = button>BEST</span>
-        <span class = button>OUTER</span>
-        <span class = button>TOP</span>
-        <span class = button>BOTTOM</span>
-        <span class = button>DRESS</span>
-        <span class = button>SHOES / BAG / ACC</span>
-        <span class = button>SALE</span>
-        <span class = button>GENDER NEUTRAL</span>
-        <span class = button>RE-STOCK [24SS]</span>
-        <span><img src="./Korea.png"alt="korea" ></span>
-        <span><img src="./US.png"alt="US" ></span>
-        </p>
-      </p>
-      <p>
-        <span class = button>Collection</span>
-        <span class = button>Account</span>
-        <span class = button>Community</span>
-        <span class = button>Search</span>
-      </p>
-    </div>
-      <span class = "img"><img src="./center_txt.png"alt="US" ></span>
-  <span class = "img"><img src="./middle_pic.png"alt="US" ></span>
-  <span class = "img"><img src="./bottom_txt.png"alt="US" ></span>
-<div class = "fixed">
-  <div> <p>Agreement Privacy Guide</p></div>
-  <div>
-  <p>COMPANY: (주)릿킴|CEO:Guess</p>
-  <p>BUSINESS LICENSE: 123-45-6789</p>
-      <p>E-COMMERCE PREMIT:2024-SEOUL-05</p>
+    .문의버튼 {
+      background-color: black;
+      font-size: 10px;
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      bottom: 0;
+      right: 0;
+      margin: auto 30px 30px auto;
+      border-radius: 50%;
+    }
+
+    .문의하기 {
+      position: absolute;
+      left: 11.1%;
+      text-align: center;
+      font-size: 10px;
+      bottom: 40%;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="headline">
+    <span class="headline_txt">SIGN UP NOW GET 2,000 OFF COUPON, JOIN US!</span>
+  </div>
+
+  <div class=buttons>
+    <p>
+      <span class=button>rtk.</span>
+      <span class=button>NEWEST</span>
+      <span class=button>BEST</span>
+      <span class=button>OUTER</span>
+      <span class=button>TOP</span>
+      <span class=button>BOTTOM</span>
+      <span class=button>DRESS</span>
+      <span class=button>SHOES / BAG / ACC</span>
+      <span class=button>SALE</span>
+      <span class=button>GENDER NEUTRAL</span>
+      <span class=button>RE-STOCK [24SS]</span>
+      <span><img src="./Korea.png" alt="korea"></span>
+      <span><img src="./US.png" alt="US"></span>
+    </p>
+    </p>
+    <p>
+      <span class=button>Collection</span>
+      <span class=button>Account</span>
+      <span class=button>Community</span>
+      <span class=button>Search</span>
+    </p>
+  </div>
+  <span class="img"><img src="./center_txt.png" alt="US"></span>
+  <span class="img"><img src="./middle_pic.png" alt="US"></span>
+  <span class="img"><img src="./bottom_txt.png" alt="US"></span>
+  <div class="fixed">
+    <div>
+      <p>Agreement Privacy Guide</p>
     </div>
     <div>
-      <p>04386, 92, Hangang-daero, Yongsan-gu, Seoul, Republic of Korea</p>
-        <p>개인정보관리책임자: Guess</p>
+      <p>COMPANY: (주)릿킴|CEO:Guess<br>
+        BUSINESS LICENSE: 123-45-6789<br>
+        E-COMMERCE PREMIT:2024-SEOUL-05</p>
     </div>
-<div>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-</div>
+    <div>
+      <p>04386, 92, Hangang-daero, Yongsan-gu, Seoul, Republic of Korea<br>
+        개인정보관리책임자: Guess</p>
+    </div>
+    <div>
+      <p>CS CENTER<br>
+        NON-FRI 11:00-17:00<br>
+        LUNCH 13:00-14:00<br>
+        유선상담을 지원하지 않습니다.<br>
+        사이트 하단 '문의하기'이용 부탁드립니다 :)<br>
+        WEEKEND,HOLIDAY OFF</p>
+    </div>
+    <div>
+      <p>BANK INFO<br>
+        무통장결제 계좌 [KB 000-0000-0000-00 (주)릿킴]</p>
+    </div>
 
+    <div>
+      <p>ABCEDFG@gmail.com</p>
+    </div>
 
-
-  
-
-
-</div>
-  </body>
+  </div>
+  <div class="문의버튼">
+    <span class="문의하기">문의하기</span>
+  </div>
+</body>
 
 </html>
