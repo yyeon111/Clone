@@ -13,15 +13,34 @@
 
   </script>
   <style>
-    div {
+    .a {
       background-color: red;
+      width: 50px;
+    }
+
+    .b {
+      background-color: green;
+      width: 100px;
+      height: 100px;
+
     }
   </style>
+  <script>
+    function press() {
+      $('#hello').toggle();
+    }
+  </script>
 </head>
 
 <body>
-  <div onclick='hello()'>
+  <!-- <div onclick='hello()'>
     top
+  </div> -->
+  <div class="a" onclick='press()'>
+    click
+  </div>
+  <div class="b" id="hello" style="display:none">
+    toggle
   </div>
 </body>
 
