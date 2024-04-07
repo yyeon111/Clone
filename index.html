@@ -31,7 +31,7 @@
       position: fixed;
     }
 
-    p>.button {
+    p>span {
       margin-right: 10px;
     }
 
@@ -86,14 +86,24 @@
       bottom: 40%;
       color: white;
     }
-  </style>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
 
-    function underline() {
-      document.getElementById("test").style.textDecoration = "underline";
-      // 출처: https://nine01223.tistory.com/255 [스프링연구소(spring-lab):티스토리]
+    a:link {
+      text-decoration: none;
     }
 
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:active {
+      text-decoration: underline;
+    }
+
+    a {
+      color: black;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
   </script>
 </head>
 
@@ -104,27 +114,26 @@
 
   <div class=buttons>
     <p>
-      <span class=button id="test" onclinck=underline()>rtk.</span>
-      <button onclick="unerline()">TEST</button>
-      <span class=button>NEWEST</span>
-      <span class=button>BEST</span>
-      <span class=button>OUTER</span>
-      <span class=button>TOP</span>
-      <span class=button>BOTTOM</span>
-      <span class=button>DRESS</span>
-      <span class=button>SHOES / BAG / ACC</span>
-      <span class=button>SALE</span>
-      <span class=button>GENDER NEUTRAL</span>
-      <span class=button>RE-STOCK [24SS]</span>
+      <span><a href="default.asp" target="_blank" class=button>rtk.</a></span>
+      <span><a href="default.asp" target="_blank" class=button>NEWEST</a></span>
+      <span><a href="default.asp" target="_blank" class=button>BEST</a></span>
+      <span><a href="default.asp" target="_blank" class=button>OUTER</a></span>
+      <span><a href="default.asp" target="_blank" class=button>TOP</a></span>
+      <span><a href="default.asp" target="_blank" class=button>BOTTOM</a></span>
+      <span><a href="default.asp" target="_blank" class=button>DRESS</a></span>
+      <span><a href="default.asp" target="_blank" class=button>SHOES / BAG / ACC</a></span>
+      <span><a href="default.asp" target="_blank" class=button>SALE</a></span>
+      <span><a href="default.asp" target="_blank" class=button>GENDER NEUTRAL</a></span>
+      <span><a href="default.asp" target="_blank" class=button>RE-STOCK [24SS]</a></span>
       <span><img src="./Korea.png" alt="korea"></span>
       <span><img src="./US.png" alt="US"></span>
     </p>
     </p>
     <p>
-      <span class=button>Collection</span>
-      <span class=button>Account</span>
-      <span class=button>Community</span>
-      <span class=button>Search</span>
+      <span><a href="default.asp" target="_blank" class=button>Collection</a></span>
+      <span><a href="default.asp" target="_blank" class=button>Account</a></span>
+      <span><a href="default.asp" target="_blank" class=button>Community</a></span>
+      <span><a href="default.asp" target="_blank" class=button>Search</a></span>
     </p>
 
   </div>
