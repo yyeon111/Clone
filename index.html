@@ -46,6 +46,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      flex: 1;
     }
 
     .img1 {
@@ -69,6 +70,7 @@
       left: 0;
       right: 0;
       margin-left: 30px;
+      display: 1;
     }
 
     .문의버튼 {
@@ -106,6 +108,22 @@
 
     a {
       color: black;
+    }
+
+    .flex-container {
+      display: flex;
+    }
+
+    .chat_box {
+      float: left;
+      width: 500px;
+      height: 700px;
+      margin: 120px 0px 300000px 1100px;
+      display: 1;
+      position: fixed;
+      border-radius: 40px;
+      border-color: black;
+      background-color: lightgray;
     }
   </style>
   <script>
@@ -151,49 +169,56 @@
     </p>
 
   </div>
-  <div class="img">
-    <span class="img1"><img src="./center_txt.png" alt="US"></span>
-    <span class="img2"><img src="./middle_pic.png" alt="US"></span>
-    <span class="img3"><img src="./bottom_txt.png" alt="US"></span>
+
+  <div class="flex-container">
+    <div class="img">
+      <span class="img1"><img src="./center_txt.png" alt="US"></span>
+      <span class="img2"><img src="./middle_pic.png" alt="US"></span>
+      <span class="img3"><img src="./bottom_txt.png" alt="US"></span>
+    </div>
+
+    <div class="fixed">
+      <div>
+        <p>Agreement Privacy Guide</p>
+      </div>
+      <div>
+        <p>COMPANY: (주)릿킴|CEO:Guess<br>
+          BUSINESS LICENSE: 123-45-6789<br>
+          E-COMMERCE PREMIT:2024-SEOUL-05</p>
+      </div>
+      <div>
+        <p>04386, 92, Hangang-daero, Yongsan-gu, Seoul, Republic of Korea<br>
+          개인정보관리책임자: Guess</p>
+      </div>
+      <div>
+        <p>CS CENTER<br>
+          NON-FRI 11:00-17:00<br>
+          LUNCH 13:00-14:00<br>
+          유선상담을 지원하지 않습니다.<br>
+          사이트 하단 '문의하기'이용 부탁드립니다 :)<br>
+          WEEKEND,HOLIDAY OFF</p>
+      </div>
+      <div>
+        <p>BANK INFO<br>
+          무통장결제 계좌 [KB 000-0000-0000-00 (주)릿킴]</p>
+      </div>
+
+      <div>
+        <p>ABCEDFG@gmail.com</p>
+      </div>
+
+    </div>
+    <div id="chat" class="chat_box" style="display:none">
+      index
+    </div>
+
   </div>
 
-  <div class="fixed">
-    <div>
-      <p>Agreement Privacy Guide</p>
-    </div>
-    <div>
-      <p>COMPANY: (주)릿킴|CEO:Guess<br>
-        BUSINESS LICENSE: 123-45-6789<br>
-        E-COMMERCE PREMIT:2024-SEOUL-05</p>
-    </div>
-    <div>
-      <p>04386, 92, Hangang-daero, Yongsan-gu, Seoul, Republic of Korea<br>
-        개인정보관리책임자: Guess</p>
-    </div>
-    <div>
-      <p>CS CENTER<br>
-        NON-FRI 11:00-17:00<br>
-        LUNCH 13:00-14:00<br>
-        유선상담을 지원하지 않습니다.<br>
-        사이트 하단 '문의하기'이용 부탁드립니다 :)<br>
-        WEEKEND,HOLIDAY OFF</p>
-    </div>
-    <div>
-      <p>BANK INFO<br>
-        무통장결제 계좌 [KB 000-0000-0000-00 (주)릿킴]</p>
-    </div>
 
-    <div>
-      <p>ABCEDFG@gmail.com</p>
-    </div>
-
-  </div>
   <div class="문의버튼" onclick='press()'>
     <span class="문의하기">문의하기</span>
   </div>
-  <div id="chat" style="display:none">
-    chat
-  </div>
+
 </body>
 
 </html>
