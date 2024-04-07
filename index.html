@@ -20,6 +20,7 @@
       position: fixed;
     }
 
+
     .headline_txt {
       display: table-cell;
       vertical-align: middle;
@@ -103,18 +104,21 @@
       color: black;
     }
   </style>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    function hey() {
+      alert('hey');
+    }
   </script>
 </head>
 
 <body>
-  <div class="headline">
-    <span class="headline_txt">SIGN UP NOW GET 2,000 OFF COUPON, JOIN US!</span>
+  <div class="headline" onclick='hey()'>
+    <span><a href="top.html" target="_blank" class="headline_txt">SIGN UP NOW GET 2,000 OFF COUPON, JOIN US!</a></span>
   </div>
 
   <div class=buttons>
     <p>
-      <span><a href="default.asp" target="_blank" class=button>rtk.</a></span>
+      <span><a href="top.html" target="_blank" class=button>rtk.</a></span>
       <span><a href="default.asp" target="_blank" class=button>NEWEST</a></span>
       <span><a href="default.asp" target="_blank" class=button>BEST</a></span>
       <span><a href="default.asp" target="_blank" class=button>OUTER</a></span>
