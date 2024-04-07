@@ -87,6 +87,14 @@
       color: white;
     }
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+
+    function underline() {
+      document.getElementById("test").style.textDecoration = "underline";
+      // 출처: https://nine01223.tistory.com/255 [스프링연구소(spring-lab):티스토리]
+    }
+
+  </script>
 </head>
 
 <body>
@@ -96,7 +104,8 @@
 
   <div class=buttons>
     <p>
-      <span class=button>rtk.</span>
+      <span class=button id="test" onclinck=underline()>rtk.</span>
+      <button onclick="unerline()">TEST</button>
       <span class=button>NEWEST</span>
       <span class=button>BEST</span>
       <span class=button>OUTER</span>
